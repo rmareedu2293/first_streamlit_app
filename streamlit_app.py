@@ -5,5 +5,5 @@ streamlit.text('kale, Spinach & Rocket Smoothie')
 streamlit.text('Hard Boiled Free Range Egg')
 
 import pandas
-myfruit_list=pandas.read._csv("https:/uni-lab-files.s3.us.west-2.amazonaws.com/dadw/fruit_macros.txt")
+myfruit_list=pandas.read_csv("https:/uni-lab-files.s3.us.west-2.amazonaws.com/dadw/fruit_macros.txt")
 streamlit.dataframe(myfruit_list)
