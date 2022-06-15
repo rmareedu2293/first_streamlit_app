@@ -13,8 +13,8 @@ fruits_to_show=myfruit_list.loc[fruits_selected]
 streamlit.dataframe(myfruit_list)
 import snowflake.connector
 my_cnx=snowflake.connector.connect(**streamlit.secrets["snowflake"])
-#my_cur=my_cnx.cursor()
-#my_cur.execute("SELECT CURRENT_USER(),CURRENET_ACCOUNT(),CURRENT_REGION()")
-#my_data_row=my_cur.fetchone()
-#streamlit.txt("Hellow from snowflake:")
-#streamlit.txt(my_dat_row)
+my_cur=my_cnx.cursor()
+my_cur.execute("SELECT CURRENT_USER(),CURRENET_ACCOUNT(),CURRENT_REGION()")
+my_data_row=my_cur.fetchone()
+streamlit.txt("Hellow from snowflake:")
+streamlit.txt(my_dat_row)
